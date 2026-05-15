@@ -2,7 +2,8 @@
   {
     "id": "song1",
     "name": "Johann Strauss II - The Blue Danube Waltz",
-    "youtubeWatchUrl": "https://youtu.be/_CTYymbbEL4?si=TA1jx1GRRTpIuNfe",
+    "thumbnail": "img/song1.jpg",
+    "youtubeWatchUrl": "https://youtu.be/lkzWF1UE1CI?si=hJe4xvX-RyKA2hKd",
     "movies": [
       {
         "name": "2001: A Space Odyssey (1968)",
@@ -13,6 +14,7 @@
   {
     "id": "song2",
     "name": "Richard Wagner - Ride of The Valkyries",
+    "thumbnail": "img/song2.jpg",
     "youtubeWatchUrl": "https://youtu.be/GGU1P6lBW6Q?si=vktwW3SzLktHHNXk",
     "movies": [
       {

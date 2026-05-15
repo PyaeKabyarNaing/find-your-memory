@@ -23,12 +23,67 @@ function youtubeEmbedUrl(watchUrl) {
   return id ? `https://www.youtube.com/embed/${id}` : null;
 }
 
-function makeEmbed(title, watchUrl) {
-  const src = youtubeEmbedUrl(watchUrl);
+function parseIframeSrc(html) {
+  const m = String(html).match(/\bsrc\s*=\s*["']([^"']+)["']/i);
+  if (!m) return null;
+  try {
+    return decodeURIComponent(m[1].trim());
+  } catch {
+    return m[1].trim();
+  }
+}
+
+/** Resolve iframe src from entry / movie object. Supports embedSrc, iframe HTML, youtubeWatchUrl, and pasted embed snippets in youtubeWatchUrl. */
+function getIframeSrc(block) {
+  if (!block) return null;
+
+  const embedSrc = block.embedSrc != null ? String(block.embedSrc).trim() : "";
+  if (embedSrc) return embedSrc;
+
+  const iframeHtml = block.iframe != null ? String(block.iframe).trim() : "";
+  if (iframeHtml) {
+    const fromTag = parseIframeSrc(iframeHtml);
+    if (fromTag) return fromTag;
+  }
+
+  const watch =
+    block.youtubeWatchUrl != null ? String(block.youtubeWatchUrl).trim() : "";
+  if (!watch) return null;
+
+  if (/<iframe/i.test(watch)) {
+    const fromTag = parseIframeSrc(watch);
+    if (fromTag) return fromTag;
+  }
+
+  try {
+    const u = new URL(watch);
+    if (u.pathname.toLowerCase().includes("/embed/")) {
+      return u.href;
+    }
+  } catch {
+    /* fall through */
+  }
+
+  const derived = youtubeEmbedUrl(watch);
+  if (derived) return derived;
+
+  try {
+    const u = new URL(watch);
+    if (u.protocol === "http:" || u.protocol === "https:") {
+      return u.href;
+    }
+  } catch {
+    return null;
+  }
+  return null;
+}
+
+function makeEmbed(title, media) {
+  const src = getIframeSrc(media);
   if (!src) {
     const p = document.createElement("p");
     p.className = "embed-missing";
-    p.textContent = `Missing or invalid YouTube URL for “${title}”.`;
+    p.textContent = `Missing or invalid embed for “${title}” (use embedSrc, iframe, or youtubeWatchUrl).`;
     return p;
   }
   const wrap = document.createElement("div");
@@ -52,15 +107,51 @@ function makeEmbed(title, watchUrl) {
   return wrap;
 }
 
+function makeThumbnailPlaceholder() {
+  const el = document.createElement("div");
+  el.className = "song-card__placeholder";
+  el.setAttribute("aria-hidden", "true");
+  return el;
+}
+
 function renderHome(entries, root) {
   root.innerHTML = "";
   const list = document.createElement("ul");
-  list.className = "song-list";
+  list.className = "song-grid";
   for (const e of entries) {
     const li = document.createElement("li");
     const a = document.createElement("a");
+    a.className = "song-card";
     a.href = `#${encodeURIComponent(e.id)}`;
-    a.textContent = e.name;
+
+    const media = document.createElement("div");
+    media.className = "song-card__media";
+
+    const thumbPath =
+      e.thumbnail != null ? String(e.thumbnail).trim() : "";
+    if (thumbPath) {
+      const img = document.createElement("img");
+      img.className = "song-card__thumb";
+      img.src = thumbPath;
+      img.alt = "";
+      img.loading = "lazy";
+      img.decoding = "async";
+      img.addEventListener("error", () => {
+        img.replaceWith(makeThumbnailPlaceholder());
+      });
+      media.append(img);
+    } else {
+      media.append(makeThumbnailPlaceholder());
+    }
+
+    const body = document.createElement("div");
+    body.className = "song-card__body";
+    const title = document.createElement("p");
+    title.className = "song-card__title";
+    title.textContent = e.name;
+
+    body.append(title);
+    a.append(media, body);
     li.append(a);
     list.append(li);
   }
@@ -82,7 +173,7 @@ function renderDetail(entry, root) {
   songSection.className = "detail-section";
   const songH = document.createElement("h3");
   songH.textContent = "Song";
-  songSection.append(songH, makeEmbed(entry.name, entry.youtubeWatchUrl));
+  songSection.append(songH, makeEmbed(entry.name, entry));
 
   const moviesSection = document.createElement("section");
   moviesSection.className = "detail-section";
@@ -91,7 +182,7 @@ function renderDetail(entry, root) {
     entry.movies.length === 1 ? "In film" : "In films";
   moviesSection.append(moviesH);
   for (const m of entry.movies) {
-    moviesSection.append(makeEmbed(m.name, m.youtubeWatchUrl));
+    moviesSection.append(makeEmbed(m.name, m));
   }
 
   root.append(back, h2, songSection, moviesSection);
