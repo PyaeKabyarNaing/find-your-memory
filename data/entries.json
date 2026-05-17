@@ -22,5 +22,161 @@
         "youtubeWatchUrl": "https://youtu.be/VE03Lqm3nbI?si=wFZyHQPdSb5KD0Pm"
       }
     ]
+  },
+  {
+    "id": "song3",
+    "name": "Beethoven - 7th Symphony, Movement II (Allegretto)",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/B6Mi3fcVd4M?si=wCg6YnWGxs5rfo-8",
+    "movies": [
+      {
+        "name": "The King's Speech (2010)",
+        "youtubeWatchUrl": "https://youtu.be/W9UktXoM6Zw?si=e5hp4xl1GBAI62jE"
+      }
+    ]
+  },
+  {
+    "id": "song4",
+    "name": "Frederic Chopin: Nocturne No.20 in c sharp minor",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/u-_hosF7TpI?si=D7rezmclrhf2Q3fO",
+    "movies": [
+      {
+        "name": "The Pianist",
+        "youtubeWatchUrl": "https://youtu.be/aS4YDuTfJ7Y?si=vPgJlXG4O9L3oJ9_"
+      }
+    ]
+  },
+  {
+    "id": "song5",
+    "name": "Mozart - Lacrimosa",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/k1-TrAvp_xs?si=LKf10UWqQrbIoJwr",
+    "movies": [
+      {
+        "name": "Amadeus",
+        "youtubeWatchUrl": "https://youtu.be/tFFfT_uSF2w?si=3rYExfsfEBHMwLZY"
+      }
+    ]
+  },
+  {
+    "id": "song6",
+    "name": "Michael Spyres – Rossini ‘Largo al factotum’ (Figaro)",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/-bhlWgyjEQs?si=kjRjALerqtxv_wi3",
+    "movies": [
+      {
+        "name": "Tom & Jerry",
+        "youtubeWatchUrl": "https://youtu.be/4aAU_3MizMM?si=V28wgITVWVbHj7kZ"
+      },
+      {
+        "name": "Looney Tunes",
+        "youtubeWatchUrl": "https://youtu.be/FuAXBvcyGPc?si=KNz8NIXI4deLSpdW"
+      },
+      {
+        "name": "Magical Maestro",
+        "youtubeWatchUrl": "https://youtu.be/EV7lfcZ_wN0?si=aUcWy-x90M_KGdIM"
+      },
+      {
+        "name": "Ice Age 5",
+        "youtubeWatchUrl": "https://youtu.be/DyZmeCJQquU?si=CMCFbSeAL4QLivez"
+      },
+      {
+        "name": "Mrs. Doubtfire (1993)",
+        "youtubeWatchUrl": "https://youtu.be/U1iI2aulaFk?si=RWmfGqzmmYgEPu9K"
+      },
+      {
+        "name": "SpongeBob",
+        "youtubeWatchUrl": "https://youtu.be/MSws3Sk9oxs?si=FbIaTmETUSUfGIns"
+      },
+      {
+        "name": "Oscar (1991)",
+        "youtubeWatchUrl": "https://youtu.be/SEPYR-c3tA4?si=xMNVt8WxzKo-SCDa"
+      }
+    ]
+  },
+  {
+    "id": "song7",
+    "name": "Mozart - Queen of the night (The magic flute)",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/YuBeBjqKSGQ?si=ueIo3jpHWFzidvBp",
+    "movies": [
+      {
+        "name": "Amadeus",
+        "youtubeWatchUrl": "https://youtu.be/5kwTEYNZosE?si=SRalvpytl19IuiNe"
+      },
+      {
+        "name": "Extremely Wicked, Shockingly Evil and Vile (2019)",
+        "youtubeWatchUrl": "https://youtu.be/RxgXH2oSdvI?si=cpKCarLmwpRmI_Uo"
+      },
+      {
+        "name": "Florence Foster Jenkins (2016)",
+        "youtubeWatchUrl": "https://youtu.be/giI2uxwFRJg?si=ExndbFQnQat8xPdO"
+      }
+    ]
+  },
+  {
+    "id": "song8",
+    "name": "Antonio Vivaldi - Winter - The Four Seasons",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/TZCfydWF48c?si=2_Rh7a1SO998fl8a",
+    "movies": [
+      {
+        "name": "John Wick 3",
+        "youtubeWatchUrl": "https://youtu.be/xITsbkT9mRQ?si=9NP2pqiOR8joqULK"
+      }
+    ]
+  },
+  {
+    "id": "song9",
+    "name": "Tchaikovsky - Swan Lake",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/do6Ki6kMq_o?si=Gc1Cr1HCmY95wiK8",
+    "movies": [
+      {
+        "name": "Black Swan (2010)",
+        "youtubeWatchUrl": "https://youtu.be/UkmyttZ05ng?si=bg26KhiOVgaJOfUq"
+      },
+      {
+        "name": "The Courier (2020)",
+        "youtubeWatchUrl": "https://youtu.be/zBFAkR7S9Bw?si=Nzjd1UPp_jD1aKhs"
+      },
+      {
+        "name": "Barbie of Swan Lake",
+        "youtubeWatchUrl": "https://youtu.be/ieVa5oSAOTI?si=pQXBYtWMgY0Dfvvs"
+      },
+      {
+        "name": "Billy Elliot (2000)",
+        "youtubeWatchUrl": "https://youtu.be/6aA6g15JcqM?si=IPPMt9ILEPPqkp6a"
+      }
+    ]
+  },
+  {
+    "id": "song10",
+    "name": "Edvard Grieg - In the Hall of the Mountain King from Peer Gynt",
+    "thumbnail": "img/song3.jpg",
+    "youtubeWatchUrl": "https://youtu.be/xrIYT-MrVaI?si=F8iMYWicCfI4ZJWA",
+    "movies": [
+      {
+        "name": "Hell's Bells (1929)",
+        "youtubeWatchUrl": "https://youtu.be/l4iiEvYywOc?si=XxNGdSGMsGrrZpwJ"
+      },
+      {
+        "name": "Alton Towers Theme",
+        "youtubeWatchUrl": "https://youtu.be/ZyqC7OLmWpk?si=_TvDBfmAKuz9MM-T"
+      },
+      {
+        "name": "Inspector Gadget Theme",
+        "youtubeWatchUrl": "https://youtu.be/T3ABB-xymBc?si=ZSSsow7b-Z4ddMv5"
+      },
+      {
+        "name": "Babes In Wartland (1984) (4:07)",
+        "youtubeWatchUrl": "https://youtu.be/VGWu7R6E210?si=E6ZyV6Ll2SYtqMrg"
+      },
+      {
+        "name": "Johnny English Reborn (2011)",
+        "youtubeWatchUrl": "https://youtu.be/Y09HCnuzT4g?si=vadXo4N8zK4UAMcK"
+      }
+    ]
   }
 ]
