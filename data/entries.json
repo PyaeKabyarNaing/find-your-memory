@@ -2,7 +2,7 @@
   {
     "id": "song1",
     "name": "Johann Strauss II - The Blue Danube Waltz",
-    "thumbnail": "img/song1.jpg",
+    "thumbnail": "img/strauss.png",
     "youtubeWatchUrl": "https://youtu.be/lkzWF1UE1CI?si=hJe4xvX-RyKA2hKd",
     "movies": [
       {
@@ -14,7 +14,7 @@
   {
     "id": "song2",
     "name": "Richard Wagner - Ride of The Valkyries",
-    "thumbnail": "img/song2.jpg",
+    "thumbnail": "img/wagner.png",
     "youtubeWatchUrl": "https://youtu.be/GGU1P6lBW6Q?si=vktwW3SzLktHHNXk",
     "movies": [
       {
@@ -26,7 +26,7 @@
   {
     "id": "song3",
     "name": "Beethoven - 7th Symphony, Movement II (Allegretto)",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/beethoven.png",
     "youtubeWatchUrl": "https://youtu.be/B6Mi3fcVd4M?si=wCg6YnWGxs5rfo-8",
     "movies": [
       {
@@ -38,7 +38,7 @@
   {
     "id": "song4",
     "name": "Frederic Chopin: Nocturne No.20 in c sharp minor",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/chopin.png",
     "youtubeWatchUrl": "https://youtu.be/u-_hosF7TpI?si=D7rezmclrhf2Q3fO",
     "movies": [
       {
@@ -50,7 +50,7 @@
   {
     "id": "song5",
     "name": "Mozart - Lacrimosa",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/mozart.png",
     "youtubeWatchUrl": "https://youtu.be/k1-TrAvp_xs?si=LKf10UWqQrbIoJwr",
     "movies": [
       {
@@ -62,7 +62,7 @@
   {
     "id": "song6",
     "name": "Michael Spyres – Rossini ‘Largo al factotum’ (Figaro)",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/rossini.png",
     "youtubeWatchUrl": "https://youtu.be/-bhlWgyjEQs?si=kjRjALerqtxv_wi3",
     "movies": [
       {
@@ -98,7 +98,7 @@
   {
     "id": "song7",
     "name": "Mozart - Queen of the night (The magic flute)",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/mozart.png",
     "youtubeWatchUrl": "https://youtu.be/YuBeBjqKSGQ?si=ueIo3jpHWFzidvBp",
     "movies": [
       {
@@ -118,7 +118,7 @@
   {
     "id": "song8",
     "name": "Antonio Vivaldi - Winter - The Four Seasons",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/vivaldi.png",
     "youtubeWatchUrl": "https://youtu.be/TZCfydWF48c?si=2_Rh7a1SO998fl8a",
     "movies": [
       {
@@ -130,7 +130,7 @@
   {
     "id": "song9",
     "name": "Tchaikovsky - Swan Lake",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/do6Ki6kMq_o?si=Gc1Cr1HCmY95wiK8",
     "movies": [
       {
@@ -154,7 +154,7 @@
   {
     "id": "song10",
     "name": "Edvard Grieg - In the Hall of the Mountain King from Peer Gynt",
-    "thumbnail": "img/song3.jpg",
+    "thumbnail": "img/grieg.png",
     "youtubeWatchUrl": "https://youtu.be/xrIYT-MrVaI?si=F8iMYWicCfI4ZJWA",
     "movies": [
       {
@@ -176,6 +176,58 @@
       {
         "name": "Johnny English Reborn (2011)",
         "youtubeWatchUrl": "https://youtu.be/Y09HCnuzT4g?si=vadXo4N8zK4UAMcK"
+      }
+    ]
+  },
+  {
+    "id": "song11",
+    "name": "Tchaikovsky - Waltz of the Flowers",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/g3aIVzoEaI0?si=jbJmJgEG4wSlBwsF",
+    "movies": [
+      {
+        "name": "Fantasia (1940)",
+        "youtubeWatchUrl": "https://youtu.be/Uss3NHf0l6U?si=38IKYHmo9I6OevNZ"
+      },
+      {
+        "name": "Barbie in the Nutcracker (2001)",
+        "youtubeWatchUrl": "https://youtu.be/UXDm0RCpqNk?si=Fr5288c_rUEaX-bW"
+      },
+      {
+        "name": "A Journey Through Fairyland (1985)",
+        "youtubeWatchUrl": "https://youtu.be/Km_piZqOOSM?si=GPal0ZhfIuKCdH-h"
+      },
+      {
+        "name": "Waltz of the Flowers, Mel-O-Toons (1959)",
+        "youtubeWatchUrl": "https://youtu.be/BhFTV3y75XI?si=bpvbsubgHK-rpgWN"
+      },
+      {
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/4jEq9iKvytk?si=Y78fFwWz9PszF1e5"
+      }
+    ]
+  },
+  {
+    "id": "song12",
+    "name": "Tchaikovsky - Dance Of The Sugar Plum Fairies",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/_W1F4YVmV8Y?si=2k9CHZtBInmCCwp1",
+    "movies": [
+      {
+        "name": "Fantasia (1940)",
+        "youtubeWatchUrl": "https://youtu.be/mQqbnMSm2aQ?si=BFtY8Zf1RRLqIbe_"
+      },
+      {
+        "name": "The Nutcracker and the Four Realms (2018)",
+        "youtubeWatchUrl": "https://youtu.be/Lcxfn6oFD4U?si=h3X9YcdRzsTJ1w_f"
+      },
+      {
+        "name": "Barbie in the Nutcracker (2001)",
+        "youtubeWatchUrl": "https://youtu.be/BUiK7Gppkjk?si=zVz5rePVu5x0UTZ2"
+      },
+      {
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/t8dFcGPTjOY?si=k7GFNMYW6RQnZvw3"
       }
     ]
   }
