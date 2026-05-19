@@ -1,3 +1,7 @@
+import { inject } from 'https://esm.sh/@vercel/analytics';
+ 
+inject();
+
 const DATA_URL = "data/entries.json";
 
 function youtubeVideoId(watchUrl) {
