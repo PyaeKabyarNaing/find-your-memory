@@ -3,7 +3,6 @@ body{
     color: #947A24;
     margin: 0;
     padding: 0;
-    height: 120%;
 }
 
 h1{
@@ -64,9 +63,9 @@ h1{
 
 .song-card__media{
     position: relative;
-    aspect-ratio: 4 / 3;
+    /* aspect-ratio: 4 / 3; */
     width: 100%;
-    height: 70%;
+    height: 80%;
     background: rgba(208, 195, 151, 0.6);
     flex-shrink: 0;
 }
@@ -75,7 +74,7 @@ h1{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* object-position: top; */
+    object-position: top;
     display: block;
 }
 
