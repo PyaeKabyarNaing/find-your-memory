@@ -36,10 +36,73 @@ h1{
     gap: 1.25rem;
 }
 
+.pagination{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #947A24;
+}
+
+.pagination__numbers{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.35rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination__num{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 2.25rem;
+    height: 2.25rem;
+    padding: 0px 4px;
+    color: #947A24;
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.pagination__num:hover{
+    color: #5c4a15;
+}
+
+.pagination__num--current{
+    color: #947A24;
+    border-bottom: 1px solid #947A24;
+    cursor: default;
+}
+
+.pagination__btn{
+    color: #947A24;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.15rem 0;
+}
+
+.pagination__btn:hover{
+    border-bottom-color: #5c4a15;
+}
+
+.pagination__btn--disabled{
+    opacity: 0.6;
+    pointer-events: none;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+
 .song-card{
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 500px;
     text-decoration: none;
     color: inherit;
     background: rgba(255, 250, 232, 0.75);
@@ -63,7 +126,6 @@ h1{
 
 .song-card__media{
     position: relative;
-    /* aspect-ratio: 4 / 3; */
     width: 100%;
     height: 80%;
     background: rgba(208, 195, 151, 0.6);

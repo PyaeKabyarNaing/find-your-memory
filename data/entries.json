@@ -92,6 +92,10 @@
       {
         "name": "Oscar (1991)",
         "youtubeWatchUrl": "https://youtu.be/SEPYR-c3tA4?si=xMNVt8WxzKo-SCDa"
+      },
+      {
+        "name": "How to cook Ratatouille by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/8zNLCVroj2A?si=n5kBSzhM6C3jrYUD"
       }
     ]
   },
@@ -124,6 +128,10 @@
       {
         "name": "John Wick 3",
         "youtubeWatchUrl": "https://youtu.be/xITsbkT9mRQ?si=9NP2pqiOR8joqULK"
+      },
+      {
+        "name": "How to cook Ratatouille by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/8zNLCVroj2A?si=n5kBSzhM6C3jrYUD"
       }
     ]
   },
@@ -181,6 +189,30 @@
   },
   {
     "id": "song11",
+    "name": "Offenbach - Can Can",
+    "thumbnail": "img/offenbach.png",
+    "youtubeWatchUrl": "https://youtu.be/sf9CtbLGzgw?si=Nfl4iePEcf09EFq2",
+    "movies": [
+      {
+        "name": "Coraline (2009)",
+        "youtubeWatchUrl": "https://youtu.be/x_bvIrkcvYE?si=3y1pQb3y8QoY6VTo"
+      }
+    ]
+  },
+  {
+    "id": "song12",
+    "name": "J.S. Bach - Toccata and Fugue in D Minor",
+    "thumbnail": "img/bach.png",
+    "youtubeWatchUrl": "https://youtu.be/ho9rZjlsyYY?si=wn9q5YWxCUqVe7hm",
+    "movies": [
+      {
+        "name": "Tom and Jerry Meet Sherlock Holmes (2010)",
+        "youtubeWatchUrl": "https://youtu.be/Tk-V3-hU3ME?si=O9td74T4l5UgiA-U"
+      }
+    ]
+  },
+  {
+    "id": "song13",
     "name": "Tchaikovsky - Waltz of the Flowers",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/g3aIVzoEaI0?si=jbJmJgEG4wSlBwsF",
@@ -208,7 +240,7 @@
     ]
   },
   {
-    "id": "song12",
+    "id": "song14",
     "name": "Tchaikovsky - Dance Of The Sugar Plum Fairies",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/_W1F4YVmV8Y?si=2k9CHZtBInmCCwp1",
@@ -228,15 +260,23 @@
       {
         "name": "Tom & Jerry: A Nutcracker Tale (2007)",
         "youtubeWatchUrl": "https://youtu.be/t8dFcGPTjOY?si=k7GFNMYW6RQnZvw3"
+      },
+      {
+        "name": "Russian Roulette by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/S8Z3gGqc7W4?si=_K-RXPwCKul6F1Pc"
       }
     ]
   },
   {
-    "id": "song13",
+    "id": "song15",
     "name": "Tchaikovsky - March Of The Toy Soldiers",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/h1j5IxOPXdY?si=FUJDT6Vk_bL2sgzG",
     "movies": [
+      {
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/sLXEADwGB9s?si=vRfBauo3NBcJbaHB"
+      },
       {
         "name": "Tom & Jerry: A Nutcracker Tale (2007)",
         "youtubeWatchUrl": "https://youtu.be/HSSfZfd0whY?si=hOeLJuxAvPFNZJo8"
@@ -248,7 +288,7 @@
     ]
   },
   {
-    "id": "song14",
+    "id": "song16",
     "name": "Tchaikovsky - The Nutcracker: Dance Of The Mirlitons",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/qQHWJiPsfZY?si=AiXwA0_WFha7rbmy",
@@ -264,7 +304,7 @@
     ]
   },
   {
-    "id": "song15",
+    "id": "song17",
     "name": "Tchaikovsky - Chinese Dance - The Nutcracker Suite",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/llA1xOFRYj0?si=fGMb-Uj-NJhCBCTI",
@@ -280,7 +320,7 @@
     ]
   },
   {
-    "id": "song16",
+    "id": "song18",
     "name": "Tchaikovsky - Arabian Dance - The Nutcracker Suite",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/-t97hKEpePw?si=Y16Ebo27qGBZTlL8",
@@ -296,7 +336,7 @@
     ]
   },
   {
-    "id": "song17",
+    "id": "song19",
     "name": "Tchaikovsky Nutcracker Suite - Russian Dance Trepak",
     "thumbnail": "img/tchaikovsky.png",
     "youtubeWatchUrl": "https://youtu.be/ZZAzhRZ0JSk?si=HJmRRCxJWs53Y0U5",
@@ -312,26 +352,146 @@
     ]
   },
   {
-    "id": "song18",
-    "name": "Offenbach - Can Can",
-    "thumbnail": "img/offenbach.png",
-    "youtubeWatchUrl": "https://youtu.be/sf9CtbLGzgw?si=Nfl4iePEcf09EFq2",
+    "id": "song20",
+    "name": "Tchaikovsky Nutcracker Suite - Overture",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/Mjbrf141mV8?si=QiGGZlPKamqJeHas",
     "movies": [
       {
-        "name": "Coraline (2009)",
-        "youtubeWatchUrl": "https://youtu.be/x_bvIrkcvYE?si=3y1pQb3y8QoY6VTo"
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/t8dFcGPTjOY?si=k7GFNMYW6RQnZvw3"
       }
     ]
   },
   {
-    "id": "song19",
-    "name": "J.S. Bach - Toccata and Fugue in D Minor",
-    "thumbnail": "img/bach.png",
-    "youtubeWatchUrl": "https://youtu.be/ho9rZjlsyYY?si=wn9q5YWxCUqVe7hm",
+    "id": "song21",
+    "name": "Tchaikovsky Nutcracker Suite - Sugarplum Fairy And Cavalier Pas De Deux",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/7pcOl59jZdQ?si=1lh3lmZduhfVJ5g4",
     "movies": [
       {
-        "name": "Tom and Jerry Meet Sherlock Holmes (2010)",
-        "youtubeWatchUrl": "https://youtu.be/Tk-V3-hU3ME?si=O9td74T4l5UgiA-U"
+        "name": "Barbie in the Nutcracker (2001)",
+        "youtubeWatchUrl": "https://youtu.be/qKkSDBV3_Tw?si=xXEFXxqk6-gt7h0O"
+      }
+    ]
+  },
+  {
+    "id": "song22",
+    "name": "Tchaikovsky Nutcracker Suite - Act I: Marie and Fritz Awake",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/MCWdeM05nY8?si=0GwJPrnzwDJJSsSe",
+    "movies": [
+      {
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/t8dFcGPTjOY?si=k7GFNMYW6RQnZvw3"
+      }
+    ]
+  },
+  {
+    "id": "song23",
+    "name": "Tchaikovsky Nutcracker Suite - The Forest of Fir Trees in Winter",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/nY4I9NRzjPM?si=mBZkmmjCQoTXlxtQ",
+    "movies": [
+      {
+        "name": "Tom & Jerry: A Nutcracker Tale (2007)",
+        "youtubeWatchUrl": "https://youtu.be/FdO6QSzQP6Y?si=j8XqEqWH1BOfKgA2"
+      }
+    ]
+  },
+  {
+    "id": "song24",
+    "name": "Giuseppe Verdi - Libiamo ne' lieti calici",
+    "thumbnail": "img/verdi.png",
+    "youtubeWatchUrl": "https://youtu.be/fWY789q4ZYo?si=BbuHppXc5CDPjUXg",
+    "movies": [
+      {
+        "name": "The Godfather (1972)",
+        "youtubeWatchUrl": "https://youtu.be/Y5T4rnPYD6k?si=T6M6qWglakf_F8BX"
+      },
+      {
+        "name": "How to cook Ratatouille by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/8zNLCVroj2A?si=n5kBSzhM6C3jrYUD"
+      },
+      {
+        "name": "Key & Peele - Slow Brotion",
+        "youtubeWatchUrl": "https://youtu.be/uj9jgbQfZJE?si=tasTmW6auBWuOKGp"
+      }
+    ]
+  },
+  {
+    "id": "song25",
+    "name": "Mozart - Turkish March",
+    "thumbnail": "img/mozart.png",
+    "youtubeWatchUrl": "https://youtu.be/HMjQygwPI1c?si=GE8KrEJ9vkHkux3-",
+    "movies": [
+      {
+        "name": "The Final Squid Game by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/Tj5OkhsTjvg?si=iy5Rji5kdvVAw_K0"
+      },
+      {
+        "name": "How to cook Ratatouille by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/8zNLCVroj2A?si=n5kBSzhM6C3jrYUD"
+      }
+    ]
+  },
+  {
+    "id": "song26",
+    "name": "Beethoven - 5th Symphony (Da da da dum)",
+    "thumbnail": "img/beethoven.png",
+    "youtubeWatchUrl": "https://youtu.be/wsz2KRqpMhI?si=lbelWsXvoZfdAg0K",
+    "movies": [
+      {
+        "name": "Mr Bean - Keyboard Capers",
+        "youtubeWatchUrl": "https://youtu.be/KMH0oW73h8E?si=umw3wibJw9fp8jjN"
+      },
+      {
+        "name": "Tom & Jerry",
+        "youtubeWatchUrl": "https://youtu.be/tMW-plmu5vc?si=42uazEMHCZ5nEA0r"
+      },
+      {
+        "name": "Class of 3000",
+        "youtubeWatchUrl": "https://youtu.be/-5Tp5j0Trj8?si=AvY-7LhTAL2fjaYP"
+      },
+      {
+        "name": "Fantasia 2000",
+        "youtubeWatchUrl": "https://youtu.be/6KQMyexPc2o?si=FJzgWdUyGf7B0Eqh"
+      },
+      {
+        "name": "How to cook Ratatouille by Kotte Animation",
+        "youtubeWatchUrl": "https://youtu.be/8zNLCVroj2A?si=n5kBSzhM6C3jrYUD"
+      }
+    ]
+  },
+  {
+    "id": "song27",
+    "name": "Johannes Brahms - Hungarian Dance No. 5",
+    "thumbnail": "img/brahms.png",
+    "youtubeWatchUrl": "https://youtu.be/3X9LvC9WkkQ?si=J6fDcjd_I_-hykRK",
+    "movies": [
+      {
+        "name": "LOONEY TUNES: Pigs in a Polka (1943)",
+        "youtubeWatchUrl": "https://youtu.be/3X9cD4QKaZU?si=sZTEH8pl9RDy6pEd"
+      },
+      {
+        "name": "Charlie Chaplin - The Great Dictator (1940)",
+        "youtubeWatchUrl": "https://youtu.be/H19jByxrqlw?si=1xkavh7bs9pydY0j"
+      }
+    ]
+  },
+  {
+    "id": "song28",
+    "name": "Franz Liszt - Hungarian Rhapsody no 2",
+    "thumbnail": "img/liszt.png",
+    "youtubeWatchUrl": "https://youtu.be/FT36za3Gyos?si=v2k7k8hpCfO6LmAn",
+    "movies": [
+      {
+        "name": "Looney Tunes | Bugs the Pianist",
+        "youtubeWatchUrl": "https://youtu.be/FzeFyKiPHZ8?si=QVe3K6OhuqbjeVrQ"
+      },
+      {
+        "name": "Tom & Jerry | Concert Madness",
+        "youtubeWatchUrl": "https://youtu.be/QpEfHVFilRc?si=faqJ0en2mypZ2asb"
       }
     ]
   }
