@@ -76,7 +76,7 @@ async function main() {
   }
 
   renderDetail(entry, root);
-  document.title = `${entry.name} · Find Your Memory`;
+  document.title = `${entry.name}`;
 }
 
 main();

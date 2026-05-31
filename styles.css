@@ -27,6 +27,47 @@ h1{
     position: relative;
 }
 
+.search{
+    margin-top: 1.25rem;
+}
+
+.search__label{
+    display: block;
+    margin-bottom: 0.45rem;
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #947A24;
+}
+
+.search__input{
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 0.65rem 0.85rem;
+    font: inherit;
+    font-size: 1rem;
+    color: #5c4a15;
+    background: rgba(255, 250, 232, 0.85);
+    border: 1px solid rgba(148, 122, 36, 0.45);
+    border-radius: 8px;
+}
+
+.search__input::placeholder{
+    color: rgba(92, 74, 21, 0.55);
+}
+
+.search__input:focus{
+    outline: 2px solid #6b5618;
+    outline-offset: 2px;
+    border-color: rgba(107, 86, 24, 0.55);
+}
+
+.search-empty{
+    margin: 1.5rem 0 0;
+    color: #5c4a15;
+    font-size: 0.95rem;
+}
+
 .song-grid{
     list-style: none;
     padding: 0;

@@ -5,6 +5,7 @@ import { fetchEntries, showLoadError } from "./embed.js";
 inject();
 
 const PAGE_SIZE = 12;
+const SEARCH_DEBOUNCE_MS = 200;
 
 function makeThumbnailPlaceholder() {
   const el = document.createElement("div");
@@ -13,20 +14,44 @@ function makeThumbnailPlaceholder() {
   return el;
 }
 
-function pageHref(page) {
-  return page <= 1 ? "index.html" : `index.html?page=${page}`;
+function getQueryFromUrl() {
+  const q = new URLSearchParams(window.location.search).get("q");
+  return q != null ? q.trim() : "";
 }
 
-function getPageFromUrl(totalPages) {
+function pageHref(page, query) {
+  const params = new URLSearchParams();
+  if (query) params.set("q", query);
+  if (page > 1) params.set("page", String(page));
+  const qs = params.toString();
+  return qs ? `index.html?${qs}` : "index.html";
+}
+
+function getPageFromUrl(totalPages, query) {
   const params = new URLSearchParams(window.location.search);
   const raw = params.get("page");
   let page = parseInt(raw, 10);
   if (!Number.isFinite(page) || page < 1) page = 1;
   if (page > totalPages) page = totalPages;
   if (raw !== null && raw !== String(page)) {
-    history.replaceState(null, "", pageHref(page));
+    history.replaceState(null, "", pageHref(page, query));
   }
   return page;
+}
+
+function entryMatchesQuery(entry, query) {
+  const q = query.toLowerCase();
+  if (entry.name && entry.name.toLowerCase().includes(q)) return true;
+  if (!Array.isArray(entry.movies)) return false;
+  return entry.movies.some(
+    (m) => m.name && m.name.toLowerCase().includes(q)
+  );
+}
+
+function filterEntries(entries, query) {
+  const trimmed = query.trim();
+  if (!trimmed) return entries;
+  return entries.filter((e) => entryMatchesQuery(e, trimmed));
 }
 
 function renderSongCard(e) {
@@ -66,7 +91,7 @@ function renderSongCard(e) {
   return li;
 }
 
-function renderPagination(currentPage, totalPages) {
+function renderPagination(currentPage, totalPages, query) {
   const nav = document.createElement("nav");
   nav.className = "pagination";
   nav.setAttribute("aria-label", "Song list pages");
@@ -79,7 +104,7 @@ function renderPagination(currentPage, totalPages) {
     prev.setAttribute("aria-disabled", "true");
     prev.removeAttribute("href");
   } else {
-    prev.href = pageHref(currentPage - 1);
+    prev.href = pageHref(currentPage - 1, query);
   }
 
   const numbers = document.createElement("ol");
@@ -95,7 +120,7 @@ function renderPagination(currentPage, totalPages) {
     } else {
       const link = document.createElement("a");
       link.className = "pagination__num";
-      link.href = pageHref(p);
+      link.href = pageHref(p, query);
       link.textContent = String(p);
       li.append(link);
     }
@@ -110,35 +135,110 @@ function renderPagination(currentPage, totalPages) {
     next.setAttribute("aria-disabled", "true");
     next.removeAttribute("href");
   } else {
-    next.href = pageHref(currentPage + 1);
+    next.href = pageHref(currentPage + 1, query);
   }
 
   nav.append(prev, numbers, next);
   return nav;
 }
 
-function renderHome(entries, root) {
+function renderSearchBar(query, onSearch) {
+  const wrap = document.createElement("div");
+  wrap.className = "search";
+
+  const label = document.createElement("label");
+  label.className = "search__label";
+  label.htmlFor = "song-search";
+  label.textContent = "Search by Song or Film";
+
+  const input = document.createElement("input");
+  input.type = "search";
+  input.id = "song-search";
+  input.className = "search__input";
+  input.placeholder = "e.g. Mozart, Tom & Jerry …";
+  input.value = query;
+  input.autocomplete = "off";
+  input.spellcheck = false;
+
+  let debounceTimer;
+  input.addEventListener("input", () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => onSearch(input.value), SEARCH_DEBOUNCE_MS);
+  });
+
+  input.addEventListener("search", () => {
+    clearTimeout(debounceTimer);
+    onSearch(input.value);
+  });
+
+  wrap.append(label, input);
+  return wrap;
+}
+
+function renderResults(entries, query, resultsRoot, scrollToTop) {
+  resultsRoot.innerHTML = "";
+
   const totalPages = Math.max(1, Math.ceil(entries.length / PAGE_SIZE));
-  const currentPage = getPageFromUrl(totalPages);
+  const currentPage = getPageFromUrl(totalPages, query);
   const start = (currentPage - 1) * PAGE_SIZE;
   const pageEntries = entries.slice(start, start + PAGE_SIZE);
 
-  root.innerHTML = "";
+  if (query && entries.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "search-empty";
+    empty.textContent = `No songs matched “${query}”.`;
+    resultsRoot.append(empty);
+    return;
+  }
 
   const list = document.createElement("ul");
   list.className = "song-grid";
   for (const e of pageEntries) {
     list.append(renderSongCard(e));
   }
-  root.append(list);
+  resultsRoot.append(list);
 
   if (totalPages > 1) {
-    root.append(renderPagination(currentPage, totalPages));
+    resultsRoot.append(renderPagination(currentPage, totalPages, query));
   }
 
-  if (currentPage > 1) {
+  if (scrollToTop && currentPage > 1) {
     window.scrollTo(0, 0);
   }
+}
+
+function mountHome(allEntries, root) {
+  root.innerHTML = "";
+
+  const searchRoot = document.createElement("div");
+  searchRoot.className = "search-wrap";
+  const resultsRoot = document.createElement("div");
+  resultsRoot.className = "home-results";
+
+  root.append(searchRoot, resultsRoot);
+
+  function update(scrollToTop = false) {
+    const query = getQueryFromUrl();
+    const filtered = filterEntries(allEntries, query);
+    renderResults(filtered, query, resultsRoot, scrollToTop);
+  }
+
+  function onSearch(value) {
+    const trimmed = value.trim();
+    const next = pageHref(1, trimmed);
+    history.pushState(null, "", next);
+    update(false);
+  }
+
+  searchRoot.append(renderSearchBar(getQueryFromUrl(), onSearch));
+  update(true);
+
+  window.addEventListener("popstate", () => {
+    const input = root.querySelector("#song-search");
+    const query = getQueryFromUrl();
+    if (input && input.value !== query) input.value = query;
+    update(true);
+  });
 }
 
 async function main() {
@@ -147,7 +247,7 @@ async function main() {
 
   try {
     const entries = await fetchEntries();
-    renderHome(entries, root);
+    mountHome(entries, root);
   } catch {
     showLoadError(root);
   }
