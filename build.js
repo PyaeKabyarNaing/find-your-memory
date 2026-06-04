@@ -374,6 +374,37 @@ function writeFile(filePath, contents) {
   fs.writeFileSync(filePath, contents);
 }
 
+const PUBLIC = path.join(ROOT, "public");
+
+const DEPLOY_ITEMS = [
+  "index.html",
+  "song.html",
+  "sitemap.xml",
+  "robots.txt",
+  "styles.css",
+  "favicon.png",
+  "pile.svg",
+  "js",
+  "data",
+  "img",
+  "song",
+];
+
+function syncToPublic() {
+  if (fs.existsSync(PUBLIC)) {
+    fs.rmSync(PUBLIC, { recursive: true, force: true });
+  }
+  fs.mkdirSync(PUBLIC, { recursive: true });
+
+  for (const item of DEPLOY_ITEMS) {
+    const src = path.join(ROOT, item);
+    if (!fs.existsSync(src)) {
+      throw new Error(`Missing deploy asset: ${item}`);
+    }
+    fs.cpSync(src, path.join(PUBLIC, item), { recursive: true });
+  }
+}
+
 function main() {
   const entries = JSON.parse(fs.readFileSync(DATA_PATH, "utf8"));
   removeGeneratedSongPages();
@@ -384,6 +415,7 @@ function main() {
   }
   writeFile(path.join(ROOT, "sitemap.xml"), renderSitemap(entries));
   writeFile(path.join(ROOT, "robots.txt"), renderRobots());
+  syncToPublic();
   console.log(`Generated ${entries.length} song pages with SITE_URL=${SITE_URL}`);
 }
 
