@@ -58,7 +58,7 @@ function renderSongCard(e) {
   const li = document.createElement("li");
   const a = document.createElement("a");
   a.className = "song-card";
-  a.href = `song.html?id=${encodeURIComponent(e.id)}`;
+  a.href = `song/${encodeURIComponent(e.id)}/`;
 
   const media = document.createElement("div");
   media.className = "song-card__media";
@@ -68,7 +68,7 @@ function renderSongCard(e) {
     const img = document.createElement("img");
     img.className = "song-card__thumb";
     img.src = thumbPath;
-    img.alt = "";
+    img.alt = `${e.name} thumbnail`;
     img.loading = "lazy";
     img.decoding = "async";
     img.addEventListener("error", () => {

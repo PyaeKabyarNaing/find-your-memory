@@ -6,14 +6,21 @@ inject();
 
 function getSongId() {
   const id = new URLSearchParams(window.location.search).get("id");
-  return id ? id.trim() : null;
+  if (id) return id.trim();
+
+  const pathMatch = window.location.pathname.match(/\/song\/([^/]+)\/?$/);
+  return pathMatch ? decodeURIComponent(pathMatch[1]).trim() : null;
+}
+
+function homeHref() {
+  return window.location.pathname.includes("/song/") ? "../../index.html" : "index.html";
 }
 
 function renderDetail(entry, root) {
   root.innerHTML = "";
   const back = document.createElement("a");
   back.className = "back";
-  back.href = "index.html";
+  back.href = homeHref();
   back.textContent = "← All songs";
 
   const h2 = document.createElement("h2");
@@ -42,7 +49,7 @@ function renderNotFound(root) {
   root.innerHTML = "";
   const back = document.createElement("a");
   back.className = "back";
-  back.href = "index.html";
+  back.href = homeHref();
   back.textContent = "← All songs";
   const p = document.createElement("p");
   p.className = "error";
@@ -76,7 +83,7 @@ async function main() {
   }
 
   renderDetail(entry, root);
-  document.title = `${entry.name}`;
+  document.title = `${entry.name} · Find Your Memory`;
 }
 
 main();

@@ -494,5 +494,49 @@
         "youtubeWatchUrl": "https://youtu.be/QpEfHVFilRc?si=faqJ0en2mypZ2asb"
       }
     ]
+  },
+  {
+    "id": "song29",
+    "name": "Tchaikovsky - Sleeping Beauty Waltz",
+    "thumbnail": "img/tchaikovsky.png",
+    "youtubeWatchUrl": "https://youtu.be/2Sb8WCPjPDs?si=8R8UmLl6gJDfPoMe",
+    "movies": [
+      {
+        "name": "Tom & Jerry - Mice Follies (1945) (Part 1)",
+        "youtubeWatchUrl": "https://youtu.be/l5bM8Jhk3N4?si=azA1j-10R_Tn4fLb"
+      },
+      {
+        "name": "Tom & Jerry - Mice Follies (1945) (Part 2)",
+        "youtubeWatchUrl": "https://youtu.be/VHzWa7vVP_c?si=jasyITnxaMNBbPNu"
+      },
+      {
+        "name": "Tom & Jerry - Mice Follies (1945) (Part 3)",
+        "youtubeWatchUrl": "https://youtu.be/WjzoWDCy-Ik?si=Xy-tl3SdSZ0iKWLC"
+      }
+    ]
+  },
+  {
+    "id": "song30",
+    "name": "Rimsky Korsakov - Flight of the Bumblebee",
+    "thumbnail": "img/rimsky.png",
+    "youtubeWatchUrl": "https://youtu.be/aYAJopwEYv8?si=9apkpgjbh1qqoxtV",
+    "movies": [
+      {
+        "name": "Kill Bill: Vol. 1 (2003)",
+        "youtubeWatchUrl": "https://youtu.be/7uG6542_v3w?si=iLANgsJ1VgMigeWc"
+      }
+    ]
+  },
+  {
+    "id": "song31",
+    "name": "Fréderic Chopin - Grand Valse Brillante",
+    "thumbnail": "img/chopin.png",
+    "youtubeWatchUrl": "https://youtu.be/g2r7skqSkNM?si=6B4uRm5nI_bGfcAd",
+    "movies": [
+      {
+        "name": "Tom & Jerry: Snowbody Loves Me (1964)",
+        "youtubeWatchUrl": "https://youtu.be/rgzLFnbtIrU?si=V1vGOJKudWwhrPnG"
+      }
+    ]
   }
 ]

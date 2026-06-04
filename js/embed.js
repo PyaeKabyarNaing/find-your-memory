@@ -1,4 +1,4 @@
-export const DATA_URL = "data/entries.json";
+export const DATA_URL = "/data/entries.json";
 
 function youtubeVideoId(watchUrl) {
   try {
