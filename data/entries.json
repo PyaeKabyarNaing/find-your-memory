@@ -2,19 +2,55 @@
   {
     "id": "song1",
     "name": "Johann Strauss II - The Blue Danube Waltz",
-    "thumbnail": "img/strauss.png",
+    "thumbnail": "img/strauss.webp",
     "youtubeWatchUrl": "https://youtu.be/lkzWF1UE1CI?si=hJe4xvX-RyKA2hKd",
     "movies": [
       {
         "name": "2001: A Space Odyssey (1968)",
         "youtubeWatchUrl": "https://youtu.be/0ZoSYsNADtY?si=2mltJpvjdS_M28pl"
+      },
+      {
+        "name": "A Corny Concerto (1943)",
+        "youtubeWatchUrl": "https://youtu.be/HRidg_bgegg?si=E8U9GeWAcd_xo5B5"
+      },
+      {
+        "name": "Waltz into Space",
+        "youtubeWatchUrl": "https://youtu.be/6Zt8OtLS6Ks?si=QZ0qRZK0ZtRs8hpb"
+      },
+      {
+        "name": "SpongeBob",
+        "youtubeWatchUrl": "https://youtu.be/vQK52nLw7Do?si=KGLtEG6o8DqtgC_F"
+      },
+      {
+        "name": "Squid Game S1 (2021)",
+        "youtubeWatchUrl": "https://youtu.be/7R2XtXe3KAc?si=d1O4Yue3P-3XgeQn"
+      },
+      {
+        "name": "The Great Wakkorotti: The Master and His Music",
+        "youtubeWatchUrl": "https://youtu.be/F_N1Q3upxoU?si=AvJtVfklxsRrf79t"
+      },
+      {
+        "name": "The Blue Danube (1939)",
+        "youtubeWatchUrl": "https://youtu.be/XhzX5p5itJs?si=xlEz3_pZR6cn1QmB"
+      },
+      {
+        "name": "Minions: The Rise of Gru (2022)",
+        "youtubeWatchUrl": "https://youtu.be/KWga9UtTH1c?si=4-lCdiZ9pv-SxCxM"
+      },
+      {
+        "name": "The Simpsons: Deep Space Homer",
+        "youtubeWatchUrl": "https://youtu.be/adpUNslsmn4?si=VlLLLRxZVZ_l4GLm"
+      },
+      {
+        "name": "Horton Hears a Who! (2008)",
+        "youtubeWatchUrl": "https://youtu.be/lOFB_amcvos?si=9SM8vktqhm6Y6Nsj"
       }
     ]
   },
   {
     "id": "song2",
     "name": "Richard Wagner - Ride of The Valkyries",
-    "thumbnail": "img/wagner.png",
+    "thumbnail": "img/wagner.webp",
     "youtubeWatchUrl": "https://youtu.be/GGU1P6lBW6Q?si=vktwW3SzLktHHNXk",
     "movies": [
       {
@@ -26,7 +62,7 @@
   {
     "id": "song3",
     "name": "Beethoven - 7th Symphony, Movement II (Allegretto)",
-    "thumbnail": "img/beethoven.png",
+    "thumbnail": "img/beethoven.webp",
     "youtubeWatchUrl": "https://youtu.be/B6Mi3fcVd4M?si=wCg6YnWGxs5rfo-8",
     "movies": [
       {
@@ -38,7 +74,7 @@
   {
     "id": "song4",
     "name": "Frederic Chopin: Nocturne No.20 in c sharp minor",
-    "thumbnail": "img/chopin.png",
+    "thumbnail": "img/chopin.webp",
     "youtubeWatchUrl": "https://youtu.be/u-_hosF7TpI?si=D7rezmclrhf2Q3fO",
     "movies": [
       {
@@ -50,7 +86,7 @@
   {
     "id": "song5",
     "name": "Mozart - Lacrimosa",
-    "thumbnail": "img/mozart.png",
+    "thumbnail": "img/mozart.webp",
     "youtubeWatchUrl": "https://youtu.be/k1-TrAvp_xs?si=LKf10UWqQrbIoJwr",
     "movies": [
       {
@@ -62,7 +98,7 @@
   {
     "id": "song6",
     "name": "Michael Spyres – Rossini ‘Largo al factotum’ (Figaro)",
-    "thumbnail": "img/rossini.png",
+    "thumbnail": "img/rossini.webp",
     "youtubeWatchUrl": "https://youtu.be/-bhlWgyjEQs?si=kjRjALerqtxv_wi3",
     "movies": [
       {
@@ -102,7 +138,7 @@
   {
     "id": "song7",
     "name": "Mozart - Queen of the night (The magic flute)",
-    "thumbnail": "img/mozart.png",
+    "thumbnail": "img/mozart.webp",
     "youtubeWatchUrl": "https://youtu.be/YuBeBjqKSGQ?si=ueIo3jpHWFzidvBp",
     "movies": [
       {
@@ -122,7 +158,7 @@
   {
     "id": "song8",
     "name": "Antonio Vivaldi - Winter - The Four Seasons",
-    "thumbnail": "img/vivaldi.png",
+    "thumbnail": "img/vivaldi.webp",
     "youtubeWatchUrl": "https://youtu.be/TZCfydWF48c?si=2_Rh7a1SO998fl8a",
     "movies": [
       {
@@ -136,9 +172,21 @@
     ]
   },
   {
+    "id": "song8.1",
+    "name": "Antonio Vivaldi - Summer - The Four Seasons",
+    "thumbnail": "img/vivaldi.webp",
+    "youtubeWatchUrl": "https://youtu.be/Nx5c_JZIM6M?si=_saX-zTq6qU5Cakl",
+    "movies": [
+      {
+        "name": "John Wick 2",
+        "youtubeWatchUrl": "https://youtu.be/xSM_nz6gKOI?si=JESQ9H_Z6fFJqeht"
+      }
+    ]
+  },
+  {
     "id": "song9",
     "name": "Tchaikovsky - Swan Lake",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/do6Ki6kMq_o?si=Gc1Cr1HCmY95wiK8",
     "movies": [
       {
@@ -162,7 +210,7 @@
   {
     "id": "song10",
     "name": "Edvard Grieg - In the Hall of the Mountain King from Peer Gynt",
-    "thumbnail": "img/grieg.png",
+    "thumbnail": "img/grieg.webp",
     "youtubeWatchUrl": "https://youtu.be/xrIYT-MrVaI?si=F8iMYWicCfI4ZJWA",
     "movies": [
       {
@@ -190,7 +238,7 @@
   {
     "id": "song11",
     "name": "Offenbach - Can Can",
-    "thumbnail": "img/offenbach.png",
+    "thumbnail": "img/offenbach.webp",
     "youtubeWatchUrl": "https://youtu.be/sf9CtbLGzgw?si=Nfl4iePEcf09EFq2",
     "movies": [
       {
@@ -202,7 +250,7 @@
   {
     "id": "song12",
     "name": "J.S. Bach - Toccata and Fugue in D Minor",
-    "thumbnail": "img/bach.png",
+    "thumbnail": "img/bach.webp",
     "youtubeWatchUrl": "https://youtu.be/ho9rZjlsyYY?si=wn9q5YWxCUqVe7hm",
     "movies": [
       {
@@ -214,7 +262,7 @@
   {
     "id": "song13",
     "name": "Tchaikovsky - Waltz of the Flowers",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/g3aIVzoEaI0?si=jbJmJgEG4wSlBwsF",
     "movies": [
       {
@@ -242,7 +290,7 @@
   {
     "id": "song14",
     "name": "Tchaikovsky - Dance Of The Sugar Plum Fairies",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/_W1F4YVmV8Y?si=2k9CHZtBInmCCwp1",
     "movies": [
       {
@@ -270,7 +318,7 @@
   {
     "id": "song15",
     "name": "Tchaikovsky - March Of The Toy Soldiers",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/h1j5IxOPXdY?si=FUJDT6Vk_bL2sgzG",
     "movies": [
       {
@@ -290,7 +338,7 @@
   {
     "id": "song16",
     "name": "Tchaikovsky - The Nutcracker: Dance Of The Mirlitons",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/qQHWJiPsfZY?si=AiXwA0_WFha7rbmy",
     "movies": [
       {
@@ -306,7 +354,7 @@
   {
     "id": "song17",
     "name": "Tchaikovsky - Chinese Dance - The Nutcracker Suite",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/llA1xOFRYj0?si=fGMb-Uj-NJhCBCTI",
     "movies": [
       {
@@ -322,7 +370,7 @@
   {
     "id": "song18",
     "name": "Tchaikovsky - Arabian Dance - The Nutcracker Suite",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/-t97hKEpePw?si=Y16Ebo27qGBZTlL8",
     "movies": [
       {
@@ -338,7 +386,7 @@
   {
     "id": "song19",
     "name": "Tchaikovsky Nutcracker Suite - Russian Dance Trepak",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/ZZAzhRZ0JSk?si=HJmRRCxJWs53Y0U5",
     "movies": [
       {
@@ -354,7 +402,7 @@
   {
     "id": "song20",
     "name": "Tchaikovsky Nutcracker Suite - Overture",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/Mjbrf141mV8?si=QiGGZlPKamqJeHas",
     "movies": [
       {
@@ -366,19 +414,23 @@
   {
     "id": "song21",
     "name": "Tchaikovsky Nutcracker Suite - Sugarplum Fairy And Cavalier Pas De Deux",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/7pcOl59jZdQ?si=1lh3lmZduhfVJ5g4",
     "movies": [
       {
         "name": "Barbie in the Nutcracker (2001)",
         "youtubeWatchUrl": "https://youtu.be/qKkSDBV3_Tw?si=xXEFXxqk6-gt7h0O"
+      },
+      {
+        "name": "John Wick 3",
+        "youtubeWatchUrl": "https://youtu.be/IKqm2ZzcfPs?si=RN1fdBNZG-Gri7Tw"
       }
     ]
   },
   {
     "id": "song22",
     "name": "Tchaikovsky Nutcracker Suite - Act I: Marie and Fritz Awake",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/MCWdeM05nY8?si=0GwJPrnzwDJJSsSe",
     "movies": [
       {
@@ -390,7 +442,7 @@
   {
     "id": "song23",
     "name": "Tchaikovsky Nutcracker Suite - The Forest of Fir Trees in Winter",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/nY4I9NRzjPM?si=mBZkmmjCQoTXlxtQ",
     "movies": [
       {
@@ -402,7 +454,7 @@
   {
     "id": "song24",
     "name": "Giuseppe Verdi - Libiamo ne' lieti calici",
-    "thumbnail": "img/verdi.png",
+    "thumbnail": "img/verdi.webp",
     "youtubeWatchUrl": "https://youtu.be/fWY789q4ZYo?si=BbuHppXc5CDPjUXg",
     "movies": [
       {
@@ -422,7 +474,7 @@
   {
     "id": "song25",
     "name": "Mozart - Turkish March",
-    "thumbnail": "img/mozart.png",
+    "thumbnail": "img/mozart.webp",
     "youtubeWatchUrl": "https://youtu.be/HMjQygwPI1c?si=GE8KrEJ9vkHkux3-",
     "movies": [
       {
@@ -438,7 +490,7 @@
   {
     "id": "song26",
     "name": "Beethoven - 5th Symphony (Da da da dum)",
-    "thumbnail": "img/beethoven.png",
+    "thumbnail": "img/beethoven.webp",
     "youtubeWatchUrl": "https://youtu.be/wsz2KRqpMhI?si=lbelWsXvoZfdAg0K",
     "movies": [
       {
@@ -466,7 +518,7 @@
   {
     "id": "song27",
     "name": "Johannes Brahms - Hungarian Dance No. 5",
-    "thumbnail": "img/brahms.png",
+    "thumbnail": "img/brahms.webp",
     "youtubeWatchUrl": "https://youtu.be/3X9LvC9WkkQ?si=J6fDcjd_I_-hykRK",
     "movies": [
       {
@@ -482,7 +534,7 @@
   {
     "id": "song28",
     "name": "Franz Liszt - Hungarian Rhapsody no 2",
-    "thumbnail": "img/liszt.png",
+    "thumbnail": "img/liszt.webp",
     "youtubeWatchUrl": "https://youtu.be/FT36za3Gyos?si=v2k7k8hpCfO6LmAn",
     "movies": [
       {
@@ -498,7 +550,7 @@
   {
     "id": "song29",
     "name": "Tchaikovsky - Sleeping Beauty Waltz",
-    "thumbnail": "img/tchaikovsky.png",
+    "thumbnail": "img/tchaikovsky.webp",
     "youtubeWatchUrl": "https://youtu.be/2Sb8WCPjPDs?si=8R8UmLl6gJDfPoMe",
     "movies": [
       {
@@ -518,7 +570,7 @@
   {
     "id": "song30",
     "name": "Rimsky Korsakov - Flight of the Bumblebee",
-    "thumbnail": "img/rimsky.png",
+    "thumbnail": "img/rimsky.webp",
     "youtubeWatchUrl": "https://youtu.be/aYAJopwEYv8?si=9apkpgjbh1qqoxtV",
     "movies": [
       {
@@ -530,12 +582,40 @@
   {
     "id": "song31",
     "name": "Fréderic Chopin - Grand Valse Brillante",
-    "thumbnail": "img/chopin.png",
+    "thumbnail": "img/chopin.webp",
     "youtubeWatchUrl": "https://youtu.be/g2r7skqSkNM?si=6B4uRm5nI_bGfcAd",
     "movies": [
       {
         "name": "Tom & Jerry: Snowbody Loves Me (1964)",
         "youtubeWatchUrl": "https://youtu.be/rgzLFnbtIrU?si=V1vGOJKudWwhrPnG"
+      }
+    ]
+  },
+  {
+    "id": "song32",
+    "name": "Fréderic Chopin - Grand Valse Brillante",
+    "thumbnail": "img/chopin.webp",
+    "youtubeWatchUrl": "https://youtu.be/sm9jjWcQGKs?si=4mME0axtgtMo35_-",
+    "movies": [
+      {
+        "name": "John Wick 4",
+        "youtubeWatchUrl": "https://youtu.be/R09pdWo960s?si=e1X8bJjFidKfSztX"
+      }
+    ]
+  },
+  {
+    "id": "song33",
+    "name": "Mussorgsky - Night on Bald Mountain",
+    "thumbnail": "img/mussorgsky.webp",
+    "youtubeWatchUrl": "https://youtu.be/iCEDfZgDPS8?si=a6mNToAqoB9sCvXb",
+    "movies": [
+      {
+        "name": "Fantasia (1940)",
+        "youtubeWatchUrl": "https://youtu.be/b756FPiLlp8?si=-N2t_6nxcf1KRfpP"
+      },
+      {
+        "name": "Fantasia (1940)",
+        "youtubeWatchUrl": "https://youtu.be/bP7kE_cncEs?si=LQIdyN_9SVPlkWfo"
       }
     ]
   }

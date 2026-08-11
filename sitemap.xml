@@ -28,6 +28,9 @@
     <loc>https://findyourmemory.com/song/song8/</loc>
   </url>
   <url>
+    <loc>https://findyourmemory.com/song/song8.1/</loc>
+  </url>
+  <url>
     <loc>https://findyourmemory.com/song/song9/</loc>
   </url>
   <url>
@@ -95,5 +98,11 @@
   </url>
   <url>
     <loc>https://findyourmemory.com/song/song31/</loc>
+  </url>
+  <url>
+    <loc>https://findyourmemory.com/song/song32/</loc>
+  </url>
+  <url>
+    <loc>https://findyourmemory.com/song/song33/</loc>
   </url>
 </urlset>
