@@ -593,7 +593,7 @@
   },
   {
     "id": "song32",
-    "name": "Fréderic Chopin - Grand Valse Brillante",
+    "name": "Fréderic Chopin - Nocturne No. 20 in C Sharp Minor",
     "thumbnail": "img/chopin.webp",
     "youtubeWatchUrl": "https://youtu.be/sm9jjWcQGKs?si=4mME0axtgtMo35_-",
     "movies": [
@@ -616,6 +616,18 @@
       {
         "name": "Fantasia (1940)",
         "youtubeWatchUrl": "https://youtu.be/bP7kE_cncEs?si=LQIdyN_9SVPlkWfo"
+      }
+    ]
+  },
+  {
+    "id": "song34",
+    "name": "Saint-Saëns - Danse Macabre",
+    "thumbnail": "img/saens.webp",
+    "youtubeWatchUrl": "https://youtu.be/XktAN207o9A?si=7VsfNQSImdewZli3",
+    "movies": [
+      {
+        "name": "Ratched (2020)",
+        "youtubeWatchUrl": "https://youtu.be/S_LL7aqCczA?si=douSRgh9Ludz79f-"
       }
     ]
   }
