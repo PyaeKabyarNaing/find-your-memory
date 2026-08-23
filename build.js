@@ -201,7 +201,7 @@ function renderPagination(currentPage, totalPages) {
 }
 
 function renderIndex(entries) {
-  const title = "Find Your Memory";
+  const title = "Find Your Memory | Music In Movies";
   const description = "Explore classical music and discover the films and scenes where you may have heard each piece.";
   const totalPages = Math.max(1, Math.ceil(entries.length / PAGE_SIZE));
   const firstPageEntries = entries.slice(0, PAGE_SIZE);
