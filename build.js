@@ -202,24 +202,42 @@ function renderPagination(currentPage, totalPages) {
 
 function renderIndex(entries) {
   const title = "Find Your Memory | Music In Movies";
-  const description = "Explore classical music and discover the films and scenes where you may have heard each piece.";
+  const description =
+    "Explore classical music and discover the films and scenes where you may have heard each piece.";
+
   const totalPages = Math.max(1, Math.ceil(entries.length / PAGE_SIZE));
   const firstPageEntries = entries.slice(0, PAGE_SIZE);
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    name: title,
-    description,
-    url: absoluteUrl("/"),
-    mainEntity: {
-      "@type": "ItemList",
-      itemListElement: entries.map((entry, index) => ({
-        "@type": "ListItem",
-        position: index + 1,
-        url: absoluteUrl(songPath(entry)),
-        name: entry.name,
-      })),
-    },
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": `${absoluteUrl("/")}#website`,
+        url: absoluteUrl("/"),
+        name: "Find Your Memory",
+        alternateName: "FindYourMemory"
+      },
+      {
+        "@type": "CollectionPage",
+        "@id": `${absoluteUrl("/")}#webpage`,
+        url: absoluteUrl("/"),
+        name: title,
+        description,
+        isPartOf: {
+          "@id": `${absoluteUrl("/")}#website`
+        },
+        mainEntity: {
+          "@type": "ItemList",
+          itemListElement: entries.map((entry, index) => ({
+            "@type": "ListItem",
+            position: index + 1,
+            url: absoluteUrl(songPath(entry)),
+            name: entry.name
+          }))
+        }
+      }
+    ]
   };
 
   return `<!DOCTYPE html>

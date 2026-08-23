@@ -20,231 +20,246 @@
     <link rel="stylesheet" href="styles.css">
     <script type="application/ld+json">{
   "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Find Your Memory | Music In Movies",
-  "description": "Explore classical music and discover the films and scenes where you may have heard each piece.",
-  "url": "https://findyourmemory.com/",
-  "mainEntity": {
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "url": "https://findyourmemory.com/song/song1/",
-        "name": "Johann Strauss II - The Blue Danube Waltz"
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://findyourmemory.com/#website",
+      "url": "https://findyourmemory.com/",
+      "name": "Find Your Memory",
+      "alternateName": "FindYourMemory"
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://findyourmemory.com/#webpage",
+      "url": "https://findyourmemory.com/",
+      "name": "Find Your Memory | Music In Movies",
+      "description": "Explore classical music and discover the films and scenes where you may have heard each piece.",
+      "isPartOf": {
+        "@id": "https://findyourmemory.com/#website"
       },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "url": "https://findyourmemory.com/song/song2/",
-        "name": "Richard Wagner - Ride of The Valkyries"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "url": "https://findyourmemory.com/song/song3/",
-        "name": "Beethoven - 7th Symphony, Movement II (Allegretto)"
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "url": "https://findyourmemory.com/song/song4/",
-        "name": "Frederic Chopin: Nocturne No.20 in c sharp minor"
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "url": "https://findyourmemory.com/song/song5/",
-        "name": "Mozart - Lacrimosa"
-      },
-      {
-        "@type": "ListItem",
-        "position": 6,
-        "url": "https://findyourmemory.com/song/song6/",
-        "name": "Michael Spyres – Rossini ‘Largo al factotum’ (Figaro)"
-      },
-      {
-        "@type": "ListItem",
-        "position": 7,
-        "url": "https://findyourmemory.com/song/song7/",
-        "name": "Mozart - Queen of the night (The magic flute)"
-      },
-      {
-        "@type": "ListItem",
-        "position": 8,
-        "url": "https://findyourmemory.com/song/song8/",
-        "name": "Antonio Vivaldi - Winter - The Four Seasons"
-      },
-      {
-        "@type": "ListItem",
-        "position": 9,
-        "url": "https://findyourmemory.com/song/song8.1/",
-        "name": "Antonio Vivaldi - Summer - The Four Seasons"
-      },
-      {
-        "@type": "ListItem",
-        "position": 10,
-        "url": "https://findyourmemory.com/song/song9/",
-        "name": "Tchaikovsky - Swan Lake"
-      },
-      {
-        "@type": "ListItem",
-        "position": 11,
-        "url": "https://findyourmemory.com/song/song10/",
-        "name": "Edvard Grieg - In the Hall of the Mountain King from Peer Gynt"
-      },
-      {
-        "@type": "ListItem",
-        "position": 12,
-        "url": "https://findyourmemory.com/song/song11/",
-        "name": "Offenbach - Can Can"
-      },
-      {
-        "@type": "ListItem",
-        "position": 13,
-        "url": "https://findyourmemory.com/song/song12/",
-        "name": "J.S. Bach - Toccata and Fugue in D Minor"
-      },
-      {
-        "@type": "ListItem",
-        "position": 14,
-        "url": "https://findyourmemory.com/song/song13/",
-        "name": "Tchaikovsky - Waltz of the Flowers"
-      },
-      {
-        "@type": "ListItem",
-        "position": 15,
-        "url": "https://findyourmemory.com/song/song14/",
-        "name": "Tchaikovsky - Dance Of The Sugar Plum Fairies"
-      },
-      {
-        "@type": "ListItem",
-        "position": 16,
-        "url": "https://findyourmemory.com/song/song15/",
-        "name": "Tchaikovsky - March Of The Toy Soldiers"
-      },
-      {
-        "@type": "ListItem",
-        "position": 17,
-        "url": "https://findyourmemory.com/song/song16/",
-        "name": "Tchaikovsky - The Nutcracker: Dance Of The Mirlitons"
-      },
-      {
-        "@type": "ListItem",
-        "position": 18,
-        "url": "https://findyourmemory.com/song/song17/",
-        "name": "Tchaikovsky - Chinese Dance - The Nutcracker Suite"
-      },
-      {
-        "@type": "ListItem",
-        "position": 19,
-        "url": "https://findyourmemory.com/song/song18/",
-        "name": "Tchaikovsky - Arabian Dance - The Nutcracker Suite"
-      },
-      {
-        "@type": "ListItem",
-        "position": 20,
-        "url": "https://findyourmemory.com/song/song19/",
-        "name": "Tchaikovsky Nutcracker Suite - Russian Dance Trepak"
-      },
-      {
-        "@type": "ListItem",
-        "position": 21,
-        "url": "https://findyourmemory.com/song/song20/",
-        "name": "Tchaikovsky Nutcracker Suite - Overture"
-      },
-      {
-        "@type": "ListItem",
-        "position": 22,
-        "url": "https://findyourmemory.com/song/song21/",
-        "name": "Tchaikovsky Nutcracker Suite - Sugarplum Fairy And Cavalier Pas De Deux"
-      },
-      {
-        "@type": "ListItem",
-        "position": 23,
-        "url": "https://findyourmemory.com/song/song22/",
-        "name": "Tchaikovsky Nutcracker Suite - Act I: Marie and Fritz Awake"
-      },
-      {
-        "@type": "ListItem",
-        "position": 24,
-        "url": "https://findyourmemory.com/song/song23/",
-        "name": "Tchaikovsky Nutcracker Suite - The Forest of Fir Trees in Winter"
-      },
-      {
-        "@type": "ListItem",
-        "position": 25,
-        "url": "https://findyourmemory.com/song/song24/",
-        "name": "Giuseppe Verdi - Libiamo ne' lieti calici"
-      },
-      {
-        "@type": "ListItem",
-        "position": 26,
-        "url": "https://findyourmemory.com/song/song25/",
-        "name": "Mozart - Turkish March"
-      },
-      {
-        "@type": "ListItem",
-        "position": 27,
-        "url": "https://findyourmemory.com/song/song26/",
-        "name": "Beethoven - 5th Symphony (Da da da dum)"
-      },
-      {
-        "@type": "ListItem",
-        "position": 28,
-        "url": "https://findyourmemory.com/song/song27/",
-        "name": "Johannes Brahms - Hungarian Dance No. 5"
-      },
-      {
-        "@type": "ListItem",
-        "position": 29,
-        "url": "https://findyourmemory.com/song/song28/",
-        "name": "Franz Liszt - Hungarian Rhapsody no 2"
-      },
-      {
-        "@type": "ListItem",
-        "position": 30,
-        "url": "https://findyourmemory.com/song/song29/",
-        "name": "Tchaikovsky - Sleeping Beauty Waltz"
-      },
-      {
-        "@type": "ListItem",
-        "position": 31,
-        "url": "https://findyourmemory.com/song/song30/",
-        "name": "Rimsky Korsakov - Flight of the Bumblebee"
-      },
-      {
-        "@type": "ListItem",
-        "position": 32,
-        "url": "https://findyourmemory.com/song/song31/",
-        "name": "Fréderic Chopin - Grand Valse Brillante"
-      },
-      {
-        "@type": "ListItem",
-        "position": 33,
-        "url": "https://findyourmemory.com/song/song32/",
-        "name": "Fréderic Chopin - Nocturne No. 20 in C Sharp Minor"
-      },
-      {
-        "@type": "ListItem",
-        "position": 34,
-        "url": "https://findyourmemory.com/song/song33/",
-        "name": "Mussorgsky - Night on Bald Mountain"
-      },
-      {
-        "@type": "ListItem",
-        "position": 35,
-        "url": "https://findyourmemory.com/song/song34/",
-        "name": "Saint-Saëns - Danse Macabre"
-      },
-      {
-        "@type": "ListItem",
-        "position": 36,
-        "url": "https://findyourmemory.com/song/song35/",
-        "name": "Giacomo Puccini: Turandot Nessun Dorma"
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "url": "https://findyourmemory.com/song/song1/",
+            "name": "Johann Strauss II - The Blue Danube Waltz"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "url": "https://findyourmemory.com/song/song2/",
+            "name": "Richard Wagner - Ride of The Valkyries"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "url": "https://findyourmemory.com/song/song3/",
+            "name": "Beethoven - 7th Symphony, Movement II (Allegretto)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "url": "https://findyourmemory.com/song/song4/",
+            "name": "Frederic Chopin: Nocturne No.20 in c sharp minor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "url": "https://findyourmemory.com/song/song5/",
+            "name": "Mozart - Lacrimosa"
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "url": "https://findyourmemory.com/song/song6/",
+            "name": "Michael Spyres – Rossini ‘Largo al factotum’ (Figaro)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "url": "https://findyourmemory.com/song/song7/",
+            "name": "Mozart - Queen of the night (The magic flute)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "url": "https://findyourmemory.com/song/song8/",
+            "name": "Antonio Vivaldi - Winter - The Four Seasons"
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "url": "https://findyourmemory.com/song/song8.1/",
+            "name": "Antonio Vivaldi - Summer - The Four Seasons"
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "url": "https://findyourmemory.com/song/song9/",
+            "name": "Tchaikovsky - Swan Lake"
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "url": "https://findyourmemory.com/song/song10/",
+            "name": "Edvard Grieg - In the Hall of the Mountain King from Peer Gynt"
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "url": "https://findyourmemory.com/song/song11/",
+            "name": "Offenbach - Can Can"
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "url": "https://findyourmemory.com/song/song12/",
+            "name": "J.S. Bach - Toccata and Fugue in D Minor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "url": "https://findyourmemory.com/song/song13/",
+            "name": "Tchaikovsky - Waltz of the Flowers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "url": "https://findyourmemory.com/song/song14/",
+            "name": "Tchaikovsky - Dance Of The Sugar Plum Fairies"
+          },
+          {
+            "@type": "ListItem",
+            "position": 16,
+            "url": "https://findyourmemory.com/song/song15/",
+            "name": "Tchaikovsky - March Of The Toy Soldiers"
+          },
+          {
+            "@type": "ListItem",
+            "position": 17,
+            "url": "https://findyourmemory.com/song/song16/",
+            "name": "Tchaikovsky - The Nutcracker: Dance Of The Mirlitons"
+          },
+          {
+            "@type": "ListItem",
+            "position": 18,
+            "url": "https://findyourmemory.com/song/song17/",
+            "name": "Tchaikovsky - Chinese Dance - The Nutcracker Suite"
+          },
+          {
+            "@type": "ListItem",
+            "position": 19,
+            "url": "https://findyourmemory.com/song/song18/",
+            "name": "Tchaikovsky - Arabian Dance - The Nutcracker Suite"
+          },
+          {
+            "@type": "ListItem",
+            "position": 20,
+            "url": "https://findyourmemory.com/song/song19/",
+            "name": "Tchaikovsky Nutcracker Suite - Russian Dance Trepak"
+          },
+          {
+            "@type": "ListItem",
+            "position": 21,
+            "url": "https://findyourmemory.com/song/song20/",
+            "name": "Tchaikovsky Nutcracker Suite - Overture"
+          },
+          {
+            "@type": "ListItem",
+            "position": 22,
+            "url": "https://findyourmemory.com/song/song21/",
+            "name": "Tchaikovsky Nutcracker Suite - Sugarplum Fairy And Cavalier Pas De Deux"
+          },
+          {
+            "@type": "ListItem",
+            "position": 23,
+            "url": "https://findyourmemory.com/song/song22/",
+            "name": "Tchaikovsky Nutcracker Suite - Act I: Marie and Fritz Awake"
+          },
+          {
+            "@type": "ListItem",
+            "position": 24,
+            "url": "https://findyourmemory.com/song/song23/",
+            "name": "Tchaikovsky Nutcracker Suite - The Forest of Fir Trees in Winter"
+          },
+          {
+            "@type": "ListItem",
+            "position": 25,
+            "url": "https://findyourmemory.com/song/song24/",
+            "name": "Giuseppe Verdi - Libiamo ne' lieti calici"
+          },
+          {
+            "@type": "ListItem",
+            "position": 26,
+            "url": "https://findyourmemory.com/song/song25/",
+            "name": "Mozart - Turkish March"
+          },
+          {
+            "@type": "ListItem",
+            "position": 27,
+            "url": "https://findyourmemory.com/song/song26/",
+            "name": "Beethoven - 5th Symphony (Da da da dum)"
+          },
+          {
+            "@type": "ListItem",
+            "position": 28,
+            "url": "https://findyourmemory.com/song/song27/",
+            "name": "Johannes Brahms - Hungarian Dance No. 5"
+          },
+          {
+            "@type": "ListItem",
+            "position": 29,
+            "url": "https://findyourmemory.com/song/song28/",
+            "name": "Franz Liszt - Hungarian Rhapsody no 2"
+          },
+          {
+            "@type": "ListItem",
+            "position": 30,
+            "url": "https://findyourmemory.com/song/song29/",
+            "name": "Tchaikovsky - Sleeping Beauty Waltz"
+          },
+          {
+            "@type": "ListItem",
+            "position": 31,
+            "url": "https://findyourmemory.com/song/song30/",
+            "name": "Rimsky Korsakov - Flight of the Bumblebee"
+          },
+          {
+            "@type": "ListItem",
+            "position": 32,
+            "url": "https://findyourmemory.com/song/song31/",
+            "name": "Fréderic Chopin - Grand Valse Brillante"
+          },
+          {
+            "@type": "ListItem",
+            "position": 33,
+            "url": "https://findyourmemory.com/song/song32/",
+            "name": "Fréderic Chopin - Nocturne No. 20 in C Sharp Minor"
+          },
+          {
+            "@type": "ListItem",
+            "position": 34,
+            "url": "https://findyourmemory.com/song/song33/",
+            "name": "Mussorgsky - Night on Bald Mountain"
+          },
+          {
+            "@type": "ListItem",
+            "position": 35,
+            "url": "https://findyourmemory.com/song/song34/",
+            "name": "Saint-Saëns - Danse Macabre"
+          },
+          {
+            "@type": "ListItem",
+            "position": 36,
+            "url": "https://findyourmemory.com/song/song35/",
+            "name": "Giacomo Puccini: Turandot Nessun Dorma"
+          }
+        ]
       }
-    ]
-  }
+    }
+  ]
 }</script>
 </head>
 <body>
