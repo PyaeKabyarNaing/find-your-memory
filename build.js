@@ -3,7 +3,7 @@ const path = require("node:path");
 
 const ROOT = __dirname;
 const DATA_PATH = path.join(ROOT, "data", "entries.json");
-const SITE_URL = (process.env.SITE_URL || "https://findyourmemory.com").replace(/\/+$/, "");
+const SITE_URL = (process.env.SITE_URL || "https://www.findyourmemory.com").replace(/\/+$/, "");
 const PAGE_SIZE = 12;
 
 function escapeHtml(value) {
